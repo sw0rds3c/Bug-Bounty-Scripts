@@ -1,0 +1,24 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $0 <target_file>"
+  exit 1
+fi
+
+target_file=$1
+output_dir="amass_output"
+
+# Create the output directory if it doesn't exist
+mkdir -p "$output_dir"
+
+# Iterate through each target in the file
+while read -r target; do
+  echo "Enumerating subdomains for $target..."
+
+  # Run Amass to enumerate subdomains for the target
+  amass enum -d "$target" -o "$output_dir/$target.txt" > /dev/null
+
+  echo "Subdomains enumerated for $target. Results saved in $output_dir/$target.txt"
+done < "$target_file"
+
+echo "Subdomain enumeration complete!"
