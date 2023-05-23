@@ -2,7 +2,7 @@
 
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
-1a. - subdomain-enumeration-using-Amass-and-a-targetFile
+1a. - 1a-subdomain-enumeration-using-Amass-and-a-targetFile
 
 Save the script in a file (e.g., amass_enumeration.sh), make it executable (chmod +x amass_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -20,7 +20,26 @@ Each target will have a separate text file with the enumerated subdomains.
 Please make sure you have Amass installed on your system and accessible in the PATH before running this script.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-2a. - 
+2a. - 2a-subdomain-enumeration-using-Sublist3r-and-a-targetFile
+
+Save the script in a file (e.g., sublist3r_enumeration.sh), make it executable (chmod +x sublist3r_enumeration.sh), 
+and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
+
+For example, if you have a file named targets.txt with the following contents:
+example.com
+example.net
+example.edu
+
+You can run the script like this:
+./sublist3r_enumeration.sh targets.txt
+
+The script will create a sublist3r_output directory (if it doesn't exist) to store the output files. 
+Each target will have a separate text file with the enumerated subdomains.
+Please make sure you have Sublist3r installed on your system and accessible in the PATH before running this script. 
+You may need to install any required dependencies for Sublist3r as well.
+
+Note: Sublist3r relies on search engine queries and DNS queries, 
+so its effectiveness may vary depending on the availability and coverage of those sources.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 3a. - 
