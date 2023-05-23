@@ -1,5 +1,7 @@
 # Bug Bounty Scripts
 
+Just a small collection of scripts that can be used for bug bounty
+
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
 1a. - 1a-subdomain-enumeration-using-Amass-and-a-targetFile
