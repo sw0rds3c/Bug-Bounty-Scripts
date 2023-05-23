@@ -1,1 +1,8 @@
-# Bug-Bounty-Scripts
+# Bug Bounty Scripts
+
+***Recon***
+
+1 - 
+2 - 
+3 - 
+
