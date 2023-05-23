@@ -4,7 +4,7 @@ Just a small collection of scripts that can be used for bug bounty
 
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
-1a. - **1a-subdomain-enumeration-using-Amass-and-a-targetFile
+1a.   1a-subdomain-enumeration-using-Amass-and-a-targetFile
 
 Save the script in a file (e.g., amass_enumeration.sh), make it executable (chmod +x amass_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -22,7 +22,7 @@ Each target will have a separate text file with the enumerated subdomains.
 Please make sure you have Amass installed on your system and accessible in the PATH before running this script.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-2a. - **2a-subdomain-enumeration-using-Sublist3r-and-a-targetFile
+2a.   2a-subdomain-enumeration-using-Sublist3r-and-a-targetFile
 
 Save the script in a file (e.g., sublist3r_enumeration.sh), make it executable (chmod +x sublist3r_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -51,7 +51,7 @@ so its effectiveness may vary depending on the availability and coverage of thos
 
 ***Vulnerability Scanning***
 -------------------------------------------------------------------------------------------------------------------------------------------
-1b. - **1b-vuln-scan-using-ZAP-and-a-targetFile
+1b.    1b-vuln-scan-using-ZAP-and-a-targetFile
 
 Save the script in a file (e.g., zap_scan.sh), make it executable (chmod +x zap_scan.sh), 
 and then you can run it by providing a file containing a list of target URLs or IP addresses. 
