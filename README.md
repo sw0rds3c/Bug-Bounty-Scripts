@@ -4,7 +4,7 @@ Just a small collection of scripts that can be used for bug bounty
 
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
-1a.   1a-subdomain-enumeration-using-Amass-and-a-targetFile
+1a.  |  1a-subdomain-enumeration-using-Amass-and-a-targetFile
 
 Save the script in a file (e.g., amass_enumeration.sh), make it executable (chmod +x amass_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -22,7 +22,7 @@ Each target will have a separate text file with the enumerated subdomains.
 Please make sure you have Amass installed on your system and accessible in the PATH before running this script.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-2a.   2a-subdomain-enumeration-using-Sublist3r-and-a-targetFile
+2a.  |  2a-subdomain-enumeration-using-Sublist3r-and-a-targetFile
 
 Save the script in a file (e.g., sublist3r_enumeration.sh), make it executable (chmod +x sublist3r_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -44,7 +44,13 @@ Note: Sublist3r relies on search engine queries and DNS queries,
 so its effectiveness may vary depending on the availability and coverage of those sources.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-3a. - 
+3a.  |  3a-Sub-enum-sort-and-probe
+
+Save the above script with subenum.sh and give it executable permission (chmod +x subenum.sh)
+
+In the above script, we have used amass and assetfinder for subdomain enumeration, then sort to remove the duplicate entries after it I have used filter-resolved (another get tool by tomnomnom) to resolve the domains and to check how many domains are actually alive, for that we have used a tool called httprobe by tomnomnom and saved the alive domains in a different file called alive.txt.
+
+Creds: https://medium.com/cyberverse/bug-bounty-with-bash-438596ff72f5 (Aditya Soni) and ofc Tomnomnom for tools :)
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
