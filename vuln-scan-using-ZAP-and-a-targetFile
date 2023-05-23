@@ -1,0 +1,37 @@
+#!/bin/bash
+
+if [[ $# -eq 0 ]]; then
+  echo "Usage: $0 <target_file>"
+  exit 1
+fi
+
+target_file=$1
+output_dir="zap_output"
+
+# Create the output directory if it doesn't exist
+mkdir -p "$output_dir"
+
+# Start ZAP in daemon mode
+zap.sh -daemon &
+
+# Wait for ZAP to start
+sleep 10
+
+# Iterate through each target in the file
+while read -r target; do
+  echo "Scanning target: $target"
+
+  # Launch ZAP scan for the target
+  zap-cli -p 8090 quick-scan --self-contained --spider --scan "$target" --recursive
+
+  # Save the ZAP report
+  report_name="$output_dir/$(echo "$target" | tr / _).html"
+  zap-cli -p 8090 report -o "$report_name" -f html
+
+  echo "Scan complete for $target. Report saved in $report_name"
+done < "$target_file"
+
+# Stop ZAP
+zap-cli -p 8090 shutdown
+
+echo "ZAP scanning complete!"
