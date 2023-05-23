@@ -8,8 +8,8 @@ Save the script in a file (e.g., amass_enumeration.sh), make it executable (chmo
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
 
 For example, if you have a file named targets.txt with the following contents:
-example.com
-example.net
+example.com,
+example.net,
 example.edu
 
 You can run the script like this:
@@ -26,8 +26,8 @@ Save the script in a file (e.g., sublist3r_enumeration.sh), make it executable (
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
 
 For example, if you have a file named targets.txt with the following contents:
-example.com
-example.net
+example.com,
+example.net,
 example.edu
 
 You can run the script like this:
@@ -56,8 +56,8 @@ and then you can run it by providing a file containing a list of target URLs or 
 Each target should be on a separate line in the file.
 
 For example, if you have a file named targets.txt with the following contents:
-https://example.com
-http://example.net
+https://example.com,
+http://example.net,
 http://exmaple.edu
 
 You can run the script like this:
