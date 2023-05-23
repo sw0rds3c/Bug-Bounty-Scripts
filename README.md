@@ -2,7 +2,7 @@
 
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
-1 - subdomain-enumeration-using-Amass-and-a-targetFile
+1a. - subdomain-enumeration-using-Amass-and-a-targetFile
 
 Save the script in a file (e.g., amass_enumeration.sh), make it executable (chmod +x amass_enumeration.sh), 
 and then you can run it by providing a file containing a list of target domains. Each domain should be on a separate line in the file.
@@ -19,8 +19,15 @@ The script will create an amass_output directory (if it doesn't exist) to store 
 Please make sure you have Amass installed on your system and accessible in the PATH before running this script.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-2 - 
+2a. - 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-3 - 
+3a. - 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+***Vulnerability Scanning***
+-------------------------------------------------------------------------------------------------------------------------------------------
+1b. - 
 
