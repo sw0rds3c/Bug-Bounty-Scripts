@@ -1,6 +1,6 @@
 # Bug Bounty Scripts
 
-Just a small collection of scripts that can be used for bug bounty
+A small collection of scripts that can be used for bug bounty
 
 ***Recon***
 -----------------------------------------------------------------------------------------------------------------------------------------
